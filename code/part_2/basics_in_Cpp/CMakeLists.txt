@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.20)
 
 # define the project name
-project(basics_in_Cpp VERSION 1.0 LANGUAGES CXX)
+project(basics_in_Cpp VERSION 1.0 LANGUAGES CXX C)
 
 # define the c standard version
 set(CMAKE_CXX_STANDARD 14)
@@ -26,8 +26,10 @@ add_executable(dynamic_memory_in_cpp_new dynamic_memory_new.cpp)
 add_executable(static_keyword static_keyword.cpp)
 add_executable(type_casting type_casting.cpp)
 add_executable(templates templates.cpp)
-add_executable(basic_method basic_method.cpp)
 add_executable(stl stl.cpp)
 add_executable(stl_and_casting_exercise stl_and_casting_exercise.cpp)
 add_executable(exceptions exceptions.cpp)
 add_executable(bank bank.cpp)
+add_executable(_dynamic_mem _dynamic_mem.c)
+add_executable(_dynmaic_mem_cpp _dynmaic_mem.cpp)
+add_executable(uniq _unique.cpp)

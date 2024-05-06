@@ -14,6 +14,4 @@ auto main() -> int
         arr[i] = i + 1;
         std::cout << arr[i] << "\n";
     }
-    
-    
 }

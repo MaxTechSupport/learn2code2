@@ -35,3 +35,15 @@ add_executable(_dynmaic_mem_cpp _dynmaic_mem.cpp)
 add_executable(uniq _unique.cpp)
 add_executable(_inheritance _inheritance.cpp)
 add_executable(animal_polymorph animal_polymorph.cpp)
+add_executable(templateeeee templateeeee.cpp)
+add_executable(my_exception my_exception.cpp)
+
+
+find_package( OpenCV )
+
+if(OpenCV_FOUND)
+    add_executable(opencv_hello2 opencv_hello2.cpp)
+    target_compile_definitions(opencv_hello2 PRIVATE OUTPATH="${CMAKE_CURRENT_BINARY_DIR}")
+    target_include_directories(opencv_hello2 PUBLIC ${OpenCV_INCLUDE_DIRS})
+    target_link_libraries( opencv_hello2 ${OpenCV_LIBRARIES} )
+endif()

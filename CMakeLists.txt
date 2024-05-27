@@ -6,6 +6,7 @@ set(BUILD_PART_1 ON, CACHE BOOL "Enable building code of part 1")
 set(BUILD_PART_2 ON, CACHE BOOL "Enable building code of part 2")
 set(BUILD_PART_2_OPENCV ON, CACHE BOOL "Enable building code of part 2 which needs OpenCV")
 
+
 if(BUILD_PART_1)
     # add the C projects
     add_subdirectory(./code/part_1/basics)
